@@ -114,7 +114,7 @@ export default function Home() {
       </div>
 
       {/* Services Section */}
-      <div className="py-24 bg-white">
+      <div id="services" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16">Our Professional Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
