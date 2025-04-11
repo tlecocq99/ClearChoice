@@ -199,7 +199,7 @@ export default function Home() {
               className="flex items-center gap-2"
             >
               <PhoneCall className="h-5 w-5" />
-              (337) 889-6169
+              (337)889-6169
             </Button>
             <Button
               variant="outline"
