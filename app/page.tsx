@@ -198,15 +198,14 @@ export default function Home() {
               size="lg"
               className="flex items-center gap-2"
             >
-              <a href="tel:+13378896169" variant="outline"
-              size="lg" className="flex items-center gap-2">
+              <a href="tel:+13378896169"
+                 className="flex items-center gap-2">
               <PhoneCall className="h-5 w-5" />
               (337)889-6169
               </a>
             </Button>
 
             <Button
-              variant="outline"
               size="lg"
               className="flex items-center gap-2"
             >
