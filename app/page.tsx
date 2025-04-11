@@ -193,6 +193,7 @@ export default function Home() {
             <p className="text-gray-600">Get in touch for a free quote or any questions</p>
           </div>
           <div className="flex flex-col md:flex-row justify-center gap-8">
+          <a href="tel:+13378896169">  
             <Button
               variant="outline"
               size="lg"
@@ -201,6 +202,7 @@ export default function Home() {
               <PhoneCall className="h-5 w-5" />
               (337)889-6169
             </Button>
+          </a>
             <Button
               variant="outline"
               size="lg"
