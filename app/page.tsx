@@ -102,16 +102,19 @@ export default function Home() {
                   </form>
                 </DialogContent>
               </Dialog>
-              <Button size="lg" variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
+              <a
+                href="#services"
+                className="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors"
+              >
                 Our Services
-              </Button>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
       {/* Services Section */}
-      <div className="py-24 bg-white">
+      <div id="services" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16">Our Professional Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
