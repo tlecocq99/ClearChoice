@@ -209,8 +209,13 @@ export default function Home() {
               size="lg"
               className="flex items-center gap-2"
             >
-              <Mail className="h-5 w-5" />
-              contact@poolservice.com
+              <a
+                href="mailto:westerchil@gmail.com"
+                className="flex items-center gap-2"
+              >
+                <Mail className="h-5 w-5" />
+                contact@poolservice.com
+              </a>
             </Button>
           </div>
         </div>
