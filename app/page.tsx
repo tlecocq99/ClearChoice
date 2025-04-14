@@ -166,5 +166,3 @@ import { useState } from "react";
         </div>
       </footer>
     </div>
-  );
-}
