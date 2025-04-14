@@ -30,7 +30,7 @@ return(
             </p>
             <div className="flex gap-4">
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                    <a href="tel:+13378896169">
+                    <a href="#contact">
                         Get Free Quote
                     </a>
                   </Button>
@@ -121,7 +121,7 @@ return(
       <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
+            <h2 id="contact"className="text-3xl font-bold mb-4">Contact Us</h2>
             <p className="text-gray-600">Get in touch for a free quote or any questions</p>
           </div>
           <div className="flex flex-col md:flex-row justify-center gap-8">
