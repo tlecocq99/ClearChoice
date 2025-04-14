@@ -99,7 +99,7 @@ return(
               },
               {
                 title: "Competitive Pricing",
-                description: "",
+                description: "No hidden fees — Honest pricing to fit your budget without sacrificing quality",
                 icon: <CheckCircle2 className="h-6 w-6" />,
               },
             ].map((item, index) => (
@@ -146,7 +146,7 @@ return(
                 className="flex items-center gap-2"
               >
                 <Mail className="h-5 w-5" />
-                contact@poolservice.com
+                westerchil@gmail.com
               </a>
             </Button>
           </div>
