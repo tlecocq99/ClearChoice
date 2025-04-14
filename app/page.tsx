@@ -16,7 +16,7 @@ return(
       <div 
         className="relative h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('https://www.pexels.com/photo/swimming-pool-under-blue-sky-261327/')",
+          backgroundImage: "url('https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg')",
         }}
       >
         <div className="absolute inset-0 bg-blue-900/40" />
