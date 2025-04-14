@@ -9,7 +9,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { PhoneCall, Mail, Clock, Shield, Droplets, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 
-  return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Hero Section */}
       <div 
