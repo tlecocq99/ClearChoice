@@ -9,23 +9,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { PhoneCall, Mail, Clock, Shield, Droplets, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 
-export default function Home() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send this data to your backend
-    console.log({ name, email, phone, message });
-    // Reset form
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Hero Section */}
@@ -39,69 +22,17 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl">
             <h1 className="text-5xl font-bold text-white mb-6">
-              Clear Choice Pools, Clear Choice Service
+              Clear Choice Pools
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Professional pool maintenance and cleaning services to keep your pool pristine all year round.
+              Professional pool maintenance and cleaning services to keep your pool clean and sanitized all year round.
             </p>
             <div className="flex gap-4">
-              <Dialog>
-                <DialogTrigger asChild>
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                    Get Free Quote
+                    <a href="tel:+13378896169">
+                        Get Free Quote
+                    </a>
                   </Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
-                  <DialogHeader>
-                    <DialogTitle>Request a Free Quote</DialogTitle>
-                  </DialogHeader>
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
-                      <Input
-                        id="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        placeholder="Your name"
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="your@email.com"
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        placeholder="(555) 123-4567"
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea
-                        id="message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        placeholder="Tell us about your pool service needs"
-                        required
-                      />
-                    </div>
-                    <Button type="submit" className="w-full">Submit Request</Button>
-                  </form>
-                </DialogContent>
-              </Dialog>
               <a
                 href="#services"
                 className="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors"
@@ -166,8 +97,8 @@ export default function Home() {
                 icon: <Shield className="h-6 w-6" />,
               },
               {
-                title: "Experienced Team",
-                description: "Over 3 years of industry experience",
+                title: "Competitive Pricing",
+                description: "",
                 icon: <CheckCircle2 className="h-6 w-6" />,
               },
             ].map((item, index) => (
