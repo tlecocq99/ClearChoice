@@ -16,7 +16,7 @@ return(
       <div 
         className="relative h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('../components/pictures/underwater.jpg')",
+          backgroundImage: "url('https://as2.ftcdn.net/v2/jpg/00/83/86/63/1000_F_83866376_1bnVFhX0uPIfuZ1ZSYlfhCsIlHOVPt6G.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-blue-900/40" />
