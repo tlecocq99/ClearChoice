@@ -1,3 +1,583 @@
-{"name":"hot-reloader","duration":51,"timestamp":8295400957,"id":3,"tags":{"version":"14.1.3","isTurbopack":false},"startTime":1744922645575,"traceId":"5029d961259c6d94"},{"name":"start","duration":2,"timestamp":8295401736,"id":4,"parentId":3,"tags":{},"startTime":1744922645576,"traceId":"5029d961259c6d94"},{"name":"get-version-info","duration":615020,"timestamp":8295401933,"id":5,"parentId":4,"tags":{},"startTime":1744922645576,"traceId":"5029d961259c6d94"},{"name":"clean","duration":607,"timestamp":8296017002,"id":6,"parentId":4,"tags":{},"startTime":1744922646191,"traceId":"5029d961259c6d94"},{"name":"create-pages-mapping","duration":145,"timestamp":8296019049,"id":8,"parentId":7,"tags":{},"startTime":1744922646193,"traceId":"5029d961259c6d94"},{"name":"create-entrypoints","duration":25168,"timestamp":8296019211,"id":9,"parentId":7,"tags":{},"startTime":1744922646193,"traceId":"5029d961259c6d94"},{"name":"generate-webpack-config","duration":156552,"timestamp":8296044414,"id":10,"parentId":7,"tags":{},"startTime":1744922646219,"traceId":"5029d961259c6d94"},{"name":"get-webpack-config","duration":182007,"timestamp":8296018974,"id":7,"parentId":4,"tags":{},"startTime":1744922646193,"traceId":"5029d961259c6d94"},{"name":"make","duration":1125,"timestamp":8296285155,"id":12,"parentId":11,"tags":{},"startTime":1744922646459,"traceId":"5029d961259c6d94"},{"name":"chunk-graph","duration":615,"timestamp":8296288632,"id":14,"parentId":13,"tags":{},"startTime":1744922646463,"traceId":"5029d961259c6d94"},{"name":"optimize-modules","duration":30,"timestamp":8296289369,"id":16,"parentId":13,"tags":{},"startTime":1744922646463,"traceId":"5029d961259c6d94"},{"name":"optimize-chunks","duration":221,"timestamp":8296289481,"id":17,"parentId":13,"tags":{},"startTime":1744922646464,"traceId":"5029d961259c6d94"},{"name":"optimize-tree","duration":112,"timestamp":8296289766,"id":18,"parentId":13,"tags":{},"startTime":1744922646464,"traceId":"5029d961259c6d94"},{"name":"optimize-chunk-modules","duration":125,"timestamp":8296290054,"id":19,"parentId":13,"tags":{},"startTime":1744922646464,"traceId":"5029d961259c6d94"},{"name":"optimize","duration":1017,"timestamp":8296289318,"id":15,"parentId":13,"tags":{},"startTime":1744922646463,"traceId":"5029d961259c6d94"},{"name":"module-hash","duration":95,"timestamp":8296291217,"id":20,"parentId":13,"tags":{},"startTime":1744922646465,"traceId":"5029d961259c6d94"},{"name":"code-generation","duration":215,"timestamp":8296291342,"id":21,"parentId":13,"tags":{},"startTime":1744922646465,"traceId":"5029d961259c6d94"},{"name":"hash","duration":530,"timestamp":8296291813,"id":22,"parentId":13,"tags":{},"startTime":1744922646466,"traceId":"5029d961259c6d94"},{"name":"code-generation-jobs","duration":128,"timestamp":8296292340,"id":23,"parentId":13,"tags":{},"startTime":1744922646466,"traceId":"5029d961259c6d94"},{"name":"module-assets","duration":87,"timestamp":8296292437,"id":24,"parentId":13,"tags":{},"startTime":1744922646467,"traceId":"5029d961259c6d94"},{"name":"create-chunk-assets","duration":237,"timestamp":8296292534,"id":25,"parentId":13,"tags":{},"startTime":1744922646467,"traceId":"5029d961259c6d94"},{"name":"NextJsBuildManifest-generateClientManifest","duration":755,"timestamp":8296296568,"id":27,"parentId":11,"tags":{},"startTime":1744922646471,"traceId":"5029d961259c6d94"},{"name":"NextJsBuildManifest-createassets","duration":1109,"timestamp":8296296225,"id":26,"parentId":11,"tags":{},"startTime":1744922646470,"traceId":"5029d961259c6d94"},{"name":"seal","duration":10077,"timestamp":8296288305,"id":13,"parentId":11,"tags":{},"startTime":1744922646462,"traceId":"5029d961259c6d94"},{"name":"webpack-compilation","duration":29043,"timestamp":8296269594,"id":11,"parentId":3,"tags":{"name":"client"},"startTime":1744922646444,"traceId":"5029d961259c6d94"},{"name":"emit","duration":22276,"timestamp":8296298989,"id":28,"parentId":3,"tags":{},"startTime":1744922646473,"traceId":"5029d961259c6d94"},{"name":"make","duration":1149,"timestamp":8296328669,"id":30,"parentId":29,"tags":{},"startTime":1744922646503,"traceId":"5029d961259c6d94"},{"name":"chunk-graph","duration":24,"timestamp":8296330265,"id":32,"parentId":31,"tags":{},"startTime":1744922646504,"traceId":"5029d961259c6d94"},{"name":"optimize-modules","duration":4,"timestamp":8296330311,"id":34,"parentId":31,"tags":{},"startTime":1744922646504,"traceId":"5029d961259c6d94"},{"name":"optimize-chunks","duration":737,"timestamp":8296330377,"id":35,"parentId":31,"tags":{},"startTime":1744922646504,"traceId":"5029d961259c6d94"},{"name":"optimize-tree","duration":9,"timestamp":8296331162,"id":36,"parentId":31,"tags":{},"startTime":1744922646505,"traceId":"5029d961259c6d94"},{"name":"optimize-chunk-modules","duration":8,"timestamp":8296331222,"id":37,"parentId":31,"tags":{},"startTime":1744922646505,"traceId":"5029d961259c6d94"},{"name":"optimize","duration":992,"timestamp":8296330305,"id":33,"parentId":31,"tags":{},"startTime":1744922646504,"traceId":"5029d961259c6d94"},{"name":"module-hash","duration":8,"timestamp":8296331426,"id":38,"parentId":31,"tags":{},"startTime":1744922646506,"traceId":"5029d961259c6d94"},{"name":"code-generation","duration":7,"timestamp":8296331446,"id":39,"parentId":31,"tags":{},"startTime":1744922646506,"traceId":"5029d961259c6d94"},{"name":"hash","duration":61,"timestamp":8296331486,"id":40,"parentId":31,"tags":{},"startTime":1744922646506,"traceId":"5029d961259c6d94"},{"name":"code-generation-jobs","duration":43,"timestamp":8296331546,"id":41,"parentId":31,"tags":{},"startTime":1744922646506,"traceId":"5029d961259c6d94"},{"name":"module-assets","duration":13,"timestamp":8296331582,"id":42,"parentId":31,"tags":{},"startTime":1744922646506,"traceId":"5029d961259c6d94"},{"name":"create-chunk-assets","duration":12,"timestamp":8296331600,"id":43,"parentId":31,"tags":{},"startTime":1744922646506,"traceId":"5029d961259c6d94"},{"name":"seal","duration":5194,"timestamp":8296330225,"id":31,"parentId":29,"tags":{},"startTime":1744922646504,"traceId":"5029d961259c6d94"},{"name":"webpack-compilation","duration":7666,"timestamp":8296327897,"id":29,"parentId":3,"tags":{"name":"server"},"startTime":1744922646502,"traceId":"5029d961259c6d94"},{"name":"emit","duration":4657,"timestamp":8296335637,"id":44,"parentId":3,"tags":{},"startTime":1744922646510,"traceId":"5029d961259c6d94"},{"name":"make","duration":134,"timestamp":8296343496,"id":46,"parentId":45,"tags":{},"startTime":1744922646518,"traceId":"5029d961259c6d94"},{"name":"chunk-graph","duration":22,"timestamp":8296344153,"id":48,"parentId":47,"tags":{},"startTime":1744922646518,"traceId":"5029d961259c6d94"},{"name":"optimize-modules","duration":4,"timestamp":8296344193,"id":50,"parentId":47,"tags":{},"startTime":1744922646518,"traceId":"5029d961259c6d94"},{"name":"optimize-chunks","duration":11,"timestamp":8296344252,"id":51,"parentId":47,"tags":{},"startTime":1744922646518,"traceId":"5029d961259c6d94"},{"name":"optimize-tree","duration":5,"timestamp":8296344278,"id":52,"parentId":47,"tags":{},"startTime":1744922646518,"traceId":"5029d961259c6d94"},{"name":"optimize-chunk-modules","duration":5,"timestamp":8296344299,"id":53,"parentId":47,"tags":{},"startTime":1744922646518,"traceId":"5029d961259c6d94"},{"name":"optimize","duration":132,"timestamp":8296344186,"id":49,"parentId":47,"tags":{},"startTime":1744922646518,"traceId":"5029d961259c6d94"},{"name":"module-hash","duration":7,"timestamp":8296344404,"id":54,"parentId":47,"tags":{},"startTime":1744922646518,"traceId":"5029d961259c6d94"},{"name":"code-generation","duration":6,"timestamp":8296344420,"id":55,"parentId":47,"tags":{},"startTime":1744922646519,"traceId":"5029d961259c6d94"},{"name":"hash","duration":68,"timestamp":8296344455,"id":56,"parentId":47,"tags":{},"startTime":1744922646519,"traceId":"5029d961259c6d94"},{"name":"code-generation-jobs","duration":18,"timestamp":8296344523,"id":57,"parentId":47,"tags":{},"startTime":1744922646519,"traceId":"5029d961259c6d94"},{"name":"module-assets","duration":8,"timestamp":8296344536,"id":58,"parentId":47,"tags":{},"startTime":1744922646519,"traceId":"5029d961259c6d94"},{"name":"create-chunk-assets","duration":11,"timestamp":8296344548,"id":59,"parentId":47,"tags":{},"startTime":1744922646519,"traceId":"5029d961259c6d94"},{"name":"seal","duration":954,"timestamp":8296344114,"id":47,"parentId":45,"tags":{},"startTime":1744922646518,"traceId":"5029d961259c6d94"},{"name":"webpack-compilation","duration":2771,"timestamp":8296342330,"id":45,"parentId":3,"tags":{"name":"edge-server"},"startTime":1744922646516,"traceId":"5029d961259c6d94"},{"name":"emit","duration":2422,"timestamp":8296345142,"id":60,"parentId":3,"tags":{},"startTime":1744922646519,"traceId":"5029d961259c6d94"}
-
-{"name":"make","duration":238,"timestamp":8296573973,"id":65,"parentId":64,"tags":{},"startTime":1744922646748,"traceId":"5029d961259c6d94"},{"name":"chunk-graph","duration":24,"timestamp":8296574433,"id":67,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"optimize-modules","duration":4,"timestamp":8296574478,"id":69,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"optimize-chunks","duration":8,"timestamp":8296574496,"id":70,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"optimize-tree","duration":5,"timestamp":8296574517,"id":71,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"optimize-chunk-modules","duration":5,"timestamp":8296574539,"id":72,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"optimize","duration":94,"timestamp":8296574471,"id":68,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"module-hash","duration":7,"timestamp":8296574650,"id":73,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"code-generation","duration":6,"timestamp":8296574666,"id":74,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"hash","duration":43,"timestamp":8296574704,"id":75,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"code-generation-jobs","duration":17,"timestamp":8296574746,"id":76,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"module-assets","duration":7,"timestamp":8296574759,"id":77,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"create-chunk-assets","duration":11,"timestamp":8296574770,"id":78,"parentId":66,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"NextJsBuildManifest-generateClientManifest","duration":108,"timestamp":8296575097,"id":80,"parentId":64,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"NextJsBuildManifest-createassets","duration":191,"timestamp":8296575019,"id":79,"parentId":64,"tags":{},"startTime":1744922646749,"traceId":"5029d961259c6d94"},{"name":"seal","duration":966,"timestamp":8296574398,"id":66,"parentId":64,"tags":{},"startTime":1744922646748,"traceId":"5029d961259c6d94"},{"name":"webpack-compilation","duration":2025,"timestamp":8296573397,"id":64,"parentId":61,"tags":{"name":"client"},"startTime":1744922646747,"traceId":"5029d961259c6d94"},{"name":"setup-dev-bundler","duration":1434613,"timestamp":8295225271,"id":2,"parentId":1,"tags":{},"startTime":1744922645399,"traceId":"5029d961259c6d94"},{"name":"run-instrumentation-hook","duration":56,"timestamp":8296701462,"id":82,"parentId":1,"tags":{},"startTime":1744922646876,"traceId":"5029d961259c6d94"},{"name":"emit","duration":127630,"timestamp":8296575444,"id":81,"parentId":61,"tags":{},"startTime":1744922646750,"traceId":"5029d961259c6d94"},{"name":"webpack-invalidated-client","duration":132820,"timestamp":8296571071,"id":61,"parentId":3,"tags":{"trigger":"manual"},"startTime":1744922646745,"traceId":"5029d961259c6d94"},{"name":"make","duration":209,"timestamp":8296705442,"id":84,"parentId":83,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"chunk-graph","duration":27,"timestamp":8296705928,"id":86,"parentId":85,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"optimize-modules","duration":5,"timestamp":8296705973,"id":88,"parentId":85,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"optimize-chunks","duration":88,"timestamp":8296706043,"id":89,"parentId":85,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"optimize-tree","duration":6,"timestamp":8296706146,"id":90,"parentId":85,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"optimize-chunk-modules","duration":6,"timestamp":8296706171,"id":91,"parentId":85,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"optimize","duration":234,"timestamp":8296705966,"id":87,"parentId":85,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"module-hash","duration":7,"timestamp":8296706366,"id":92,"parentId":85,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"code-generation","duration":6,"timestamp":8296706382,"id":93,"parentId":85,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"hash","duration":71,"timestamp":8296706418,"id":94,"parentId":85,"tags":{},"startTime":1744922646881,"traceId":"5029d961259c6d94"},{"name":"code-generation-jobs","duration":18,"timestamp":8296706488,"id":95,"parentId":85,"tags":{},"startTime":1744922646881,"traceId":"5029d961259c6d94"},{"name":"module-assets","duration":11,"timestamp":8296706501,"id":96,"parentId":85,"tags":{},"startTime":1744922646881,"traceId":"5029d961259c6d94"},{"name":"create-chunk-assets","duration":12,"timestamp":8296706517,"id":97,"parentId":85,"tags":{},"startTime":1744922646881,"traceId":"5029d961259c6d94"},{"name":"seal","duration":930,"timestamp":8296705897,"id":85,"parentId":83,"tags":{},"startTime":1744922646880,"traceId":"5029d961259c6d94"},{"name":"webpack-compilation","duration":2063,"timestamp":8296704836,"id":83,"parentId":62,"tags":{"name":"server"},"startTime":1744922646879,"traceId":"5029d961259c6d94"},{"name":"start-dev-server","duration":1886926,"timestamp":8294822222,"id":1,"tags":{"cpus":"20","platform":"win32","memory.freeMem":"22008385536","memory.totalMem":"34175836160","memory.heapSizeLimit":"17137926144","isTurbopack":false,"memory.rss":"159649792","memory.heapTotal":"105119744","memory.heapUsed":"77439936"},"startTime":1744922644996,"traceId":"5029d961259c6d94"},{"name":"emit","duration":8789,"timestamp":8296706918,"id":98,"parentId":62,"tags":{},"startTime":1744922646881,"traceId":"5029d961259c6d94"},{"name":"webpack-invalidated-server","duration":144904,"timestamp":8296571229,"id":62,"parentId":3,"tags":{"trigger":"manual"},"startTime":1744922646745,"traceId":"5029d961259c6d94"},{"name":"make","duration":198,"timestamp":8296717837,"id":100,"parentId":99,"tags":{},"startTime":1744922646892,"traceId":"5029d961259c6d94"},{"name":"chunk-graph","duration":24,"timestamp":8296718357,"id":102,"parentId":101,"tags":{},"startTime":1744922646892,"traceId":"5029d961259c6d94"},{"name":"optimize-modules","duration":5,"timestamp":8296718398,"id":104,"parentId":101,"tags":{},"startTime":1744922646892,"traceId":"5029d961259c6d94"},{"name":"optimize-chunks","duration":10,"timestamp":8296718417,"id":105,"parentId":101,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"optimize-tree","duration":6,"timestamp":8296718440,"id":106,"parentId":101,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"optimize-chunk-modules","duration":5,"timestamp":8296718464,"id":107,"parentId":101,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"optimize","duration":93,"timestamp":8296718392,"id":103,"parentId":101,"tags":{},"startTime":1744922646892,"traceId":"5029d961259c6d94"},{"name":"module-hash","duration":7,"timestamp":8296718569,"id":108,"parentId":101,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"code-generation","duration":6,"timestamp":8296718585,"id":109,"parentId":101,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"hash","duration":45,"timestamp":8296718620,"id":110,"parentId":101,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"code-generation-jobs","duration":17,"timestamp":8296718665,"id":111,"parentId":101,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"module-assets","duration":8,"timestamp":8296718677,"id":112,"parentId":101,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"create-chunk-assets","duration":12,"timestamp":8296718690,"id":113,"parentId":101,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"seal","duration":736,"timestamp":8296718324,"id":101,"parentId":99,"tags":{},"startTime":1744922646892,"traceId":"5029d961259c6d94"},{"name":"webpack-compilation","duration":1894,"timestamp":8296717190,"id":99,"parentId":63,"tags":{"name":"edge-server"},"startTime":1744922646891,"traceId":"5029d961259c6d94"},{"name":"emit","duration":3160,"timestamp":8296719102,"id":114,"parentId":63,"tags":{},"startTime":1744922646893,"traceId":"5029d961259c6d94"},{"name":"webpack-invalidated-edge-server","duration":151643,"timestamp":8296571284,"id":63,"parentId":3,"tags":{"trigger":"manual"},"startTime":1744922646745,"traceId":"5029d961259c6d94"}
+[
+  {
+    "name": "make",
+    "duration": 238,
+    "timestamp": 8296573973,
+    "id": 65,
+    "parentId": 64,
+    "tags": {},
+    "startTime": 1744922646748,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "chunk-graph",
+    "duration": 24,
+    "timestamp": 8296574433,
+    "id": 67,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-modules",
+    "duration": 4,
+    "timestamp": 8296574478,
+    "id": 69,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-chunks",
+    "duration": 8,
+    "timestamp": 8296574496,
+    "id": 70,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-tree",
+    "duration": 5,
+    "timestamp": 8296574517,
+    "id": 71,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-chunk-modules",
+    "duration": 5,
+    "timestamp": 8296574539,
+    "id": 72,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize",
+    "duration": 94,
+    "timestamp": 8296574471,
+    "id": 68,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "module-hash",
+    "duration": 7,
+    "timestamp": 8296574650,
+    "id": 73,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "code-generation",
+    "duration": 6,
+    "timestamp": 8296574666,
+    "id": 74,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "hash",
+    "duration": 43,
+    "timestamp": 8296574704,
+    "id": 75,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "code-generation-jobs",
+    "duration": 17,
+    "timestamp": 8296574746,
+    "id": 76,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "module-assets",
+    "duration": 7,
+    "timestamp": 8296574759,
+    "id": 77,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "create-chunk-assets",
+    "duration": 11,
+    "timestamp": 8296574770,
+    "id": 78,
+    "parentId": 66,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "NextJsBuildManifest-generateClientManifest",
+    "duration": 108,
+    "timestamp": 8296575097,
+    "id": 80,
+    "parentId": 64,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "NextJsBuildManifest-createassets",
+    "duration": 191,
+    "timestamp": 8296575019,
+    "id": 79,
+    "parentId": 64,
+    "tags": {},
+    "startTime": 1744922646749,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "seal",
+    "duration": 966,
+    "timestamp": 8296574398,
+    "id": 66,
+    "parentId": 64,
+    "tags": {},
+    "startTime": 1744922646748,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "webpack-compilation",
+    "duration": 2025,
+    "timestamp": 8296573397,
+    "id": 64,
+    "parentId": 61,
+    "tags": {
+      "name": "client"
+    },
+    "startTime": 1744922646747,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "setup-dev-bundler",
+    "duration": 1434613,
+    "timestamp": 8295225271,
+    "id": 2,
+    "parentId": 1,
+    "tags": {},
+    "startTime": 1744922645399,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "run-instrumentation-hook",
+    "duration": 56,
+    "timestamp": 8296701462,
+    "id": 82,
+    "parentId": 1,
+    "tags": {},
+    "startTime": 1744922646876,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "emit",
+    "duration": 127630,
+    "timestamp": 8296575444,
+    "id": 81,
+    "parentId": 61,
+    "tags": {},
+    "startTime": 1744922646750,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "webpack-invalidated-client",
+    "duration": 132820,
+    "timestamp": 8296571071,
+    "id": 61,
+    "parentId": 3,
+    "tags": {
+      "trigger": "manual"
+    },
+    "startTime": 1744922646745,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "make",
+    "duration": 209,
+    "timestamp": 8296705442,
+    "id": 84,
+    "parentId": 83,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "chunk-graph",
+    "duration": 27,
+    "timestamp": 8296705928,
+    "id": 86,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-modules",
+    "duration": 5,
+    "timestamp": 8296705973,
+    "id": 88,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-chunks",
+    "duration": 88,
+    "timestamp": 8296706043,
+    "id": 89,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-tree",
+    "duration": 6,
+    "timestamp": 8296706146,
+    "id": 90,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-chunk-modules",
+    "duration": 6,
+    "timestamp": 8296706171,
+    "id": 91,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize",
+    "duration": 234,
+    "timestamp": 8296705966,
+    "id": 87,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "module-hash",
+    "duration": 7,
+    "timestamp": 8296706366,
+    "id": 92,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "code-generation",
+    "duration": 6,
+    "timestamp": 8296706382,
+    "id": 93,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "hash",
+    "duration": 71,
+    "timestamp": 8296706418,
+    "id": 94,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646881,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "code-generation-jobs",
+    "duration": 18,
+    "timestamp": 8296706488,
+    "id": 95,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646881,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "module-assets",
+    "duration": 11,
+    "timestamp": 8296706501,
+    "id": 96,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646881,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "create-chunk-assets",
+    "duration": 12,
+    "timestamp": 8296706517,
+    "id": 97,
+    "parentId": 85,
+    "tags": {},
+    "startTime": 1744922646881,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "seal",
+    "duration": 930,
+    "timestamp": 8296705897,
+    "id": 85,
+    "parentId": 83,
+    "tags": {},
+    "startTime": 1744922646880,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "webpack-compilation",
+    "duration": 2063,
+    "timestamp": 8296704836,
+    "id": 83,
+    "parentId": 62,
+    "tags": {
+      "name": "server"
+    },
+    "startTime": 1744922646879,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "start-dev-server",
+    "duration": 1886926,
+    "timestamp": 8294822222,
+    "id": 1,
+    "tags": {
+      "cpus": "20",
+      "platform": "win32",
+      "memory.freeMem": "22008385536",
+      "memory.totalMem": "34175836160",
+      "memory.heapSizeLimit": "17137926144",
+      "isTurbopack": false,
+      "memory.rss": "159649792",
+      "memory.heapTotal": "105119744",
+      "memory.heapUsed": "77439936"
+    },
+    "startTime": 1744922644996,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "emit",
+    "duration": 8789,
+    "timestamp": 8296706918,
+    "id": 98,
+    "parentId": 62,
+    "tags": {},
+    "startTime": 1744922646881,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "webpack-invalidated-server",
+    "duration": 144904,
+    "timestamp": 8296571229,
+    "id": 62,
+    "parentId": 3,
+    "tags": {
+      "trigger": "manual"
+    },
+    "startTime": 1744922646745,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "make",
+    "duration": 198,
+    "timestamp": 8296717837,
+    "id": 100,
+    "parentId": 99,
+    "tags": {},
+    "startTime": 1744922646892,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "chunk-graph",
+    "duration": 24,
+    "timestamp": 8296718357,
+    "id": 102,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646892,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-modules",
+    "duration": 5,
+    "timestamp": 8296718398,
+    "id": 104,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646892,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-chunks",
+    "duration": 10,
+    "timestamp": 8296718417,
+    "id": 105,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-tree",
+    "duration": 6,
+    "timestamp": 8296718440,
+    "id": 106,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize-chunk-modules",
+    "duration": 5,
+    "timestamp": 8296718464,
+    "id": 107,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "optimize",
+    "duration": 93,
+    "timestamp": 8296718392,
+    "id": 103,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646892,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "module-hash",
+    "duration": 7,
+    "timestamp": 8296718569,
+    "id": 108,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "code-generation",
+    "duration": 6,
+    "timestamp": 8296718585,
+    "id": 109,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "hash",
+    "duration": 45,
+    "timestamp": 8296718620,
+    "id": 110,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "code-generation-jobs",
+    "duration": 17,
+    "timestamp": 8296718665,
+    "id": 111,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "module-assets",
+    "duration": 8,
+    "timestamp": 8296718677,
+    "id": 112,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "create-chunk-assets",
+    "duration": 12,
+    "timestamp": 8296718690,
+    "id": 113,
+    "parentId": 101,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "seal",
+    "duration": 736,
+    "timestamp": 8296718324,
+    "id": 101,
+    "parentId": 99,
+    "tags": {},
+    "startTime": 1744922646892,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "webpack-compilation",
+    "duration": 1894,
+    "timestamp": 8296717190,
+    "id": 99,
+    "parentId": 63,
+    "tags": {
+      "name": "edge-server"
+    },
+    "startTime": 1744922646891,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "emit",
+    "duration": 3160,
+    "timestamp": 8296719102,
+    "id": 114,
+    "parentId": 63,
+    "tags": {},
+    "startTime": 1744922646893,
+    "traceId": "5029d961259c6d94"
+  },
+  {
+    "name": "webpack-invalidated-edge-server",
+    "duration": 151643,
+    "timestamp": 8296571284,
+    "id": 63,
+    "parentId": 3,
+    "tags": {
+      "trigger": "manual"
+    },
+    "startTime": 1744922646745,
+    "traceId": "5029d961259c6d94"
+  }
+]
