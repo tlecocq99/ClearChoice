@@ -32,10 +32,10 @@ export default function Home() {
           backgroundImage: "url('/images/sunset.png')",
         }}
       >
-        <div className="absolute inset-0 bg-blue-900/40" />
+        <div className="absolute inset-1 bg-blue-900/40" />
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl">
-            <h1 className="text-5xl font-bold text-white mb-6">
+            <h1 className="text-5xl font-bold text-white mb-2">
               Clear Choice Pools
             </h1>
             <p className="text-xl text-white/90 mb-8">
@@ -46,12 +46,14 @@ export default function Home() {
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                 <a href="#contact">Get Free Quote</a>
               </Button>
-              <a
-                href="#services"
-                className="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors"
-              >
-                Our Services
-              </a>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <a
+                  href="#services"
+                  className="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors"
+                >
+                  Our Services
+                </a>
+              </Button>
             </div>
           </div>
         </div>
