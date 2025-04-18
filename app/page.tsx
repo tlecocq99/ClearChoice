@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "@/public/images/logo.png";
+import logo from "/public/images/logo.png";
 
 export default function Home() {
   return (
