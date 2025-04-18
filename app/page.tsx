@@ -38,10 +38,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-gray-800/40" />
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl">
-            <h1 className="text-5xl font-bold text-white mb-2">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">
               Clear Choice Pools
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8">
               Professional pool maintenance and cleaning services to keep your
               pool clean and sanitized all year round.
             </p>
