@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
+import logo from "@/public/images/logo.png";
 
 export default function Home() {
   return (
@@ -36,6 +37,16 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 bg-gray-800/40" />
+        <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20">
+          <Image
+            src={logo}
+            alt="Clear Choice Pool Service Logo"
+            width={200}
+            height={80}
+            className="object-contain"
+            priority
+          />
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">
