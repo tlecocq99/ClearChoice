@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "/public/images/logo.png";
+import logo from "next/image";
 
 export default function Home() {
   return (
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gray-800/40" />
         <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20">
           <Image
-            src={logo}
+            src="/images/logo.png"
             alt="Clear Choice Pool Service Logo"
             width={200}
             height={80}
