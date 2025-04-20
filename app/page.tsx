@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "next/image";
+
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
@@ -50,16 +50,16 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Navbar */}
       <nav className="bg-blue-200 h-12 px-4 sticky top-0 z-50 shadow-md">
-        <div className="max-w-7xl flex justify-between items-center h-full">
-          <Image
-            src="/images/logo.png"
-            alt="Clear Choice Pool Service Logo"
-            width={150}
-            height={50}
-            className="object-contain"
-            priority
-          />
-
+        <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
+          <div className="relative h-11 w-44">
+            <Image
+              src="/images/logo.png"
+              alt="Clear Choice Pool Service Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
           {/* Dropdown Toggle */}
           <div className="relative">
             <button
