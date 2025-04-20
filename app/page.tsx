@@ -23,10 +23,77 @@ import {
 import { useState } from "react";
 import Image from "next/image";
 import logo from "next/image";
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+    history.replaceState(null, "", `#${id}`); // update the URL hash manually
+  }
+};
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  const handleNavClick = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", `#${id}`);
+      setMenuOpen(false); // close menu after click
+    }
+  };
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      {/* Navbar */}
+      <nav className="bg-blue-200 h-12 px-4 sticky top-0 z-50 shadow-md">
+        <div className="max-w-7xl flex justify-between items-center h-full">
+          <Image
+            src="/images/logo.png"
+            alt="Clear Choice Pool Service Logo"
+            width={150}
+            height={50}
+            className="object-contain"
+            priority
+          />
+
+          {/* Dropdown Toggle */}
+          <div className="relative">
+            <button
+              onClick={toggleMenu}
+              className="text-blue-900 font-semibold px-4 top-0 bottom-2 hover:text-blue-600 transition"
+            >
+              Menu
+            </button>
+            {menuOpen && (
+              <div className="fixed right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+                <button
+                  onClick={() => handleNavClick("services")}
+                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50"
+                >
+                  Services
+                </button>
+                <button
+                  onClick={() => handleNavClick("why-choose-us")}
+                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50"
+                >
+                  Why Choose Us
+                </button>
+                <button
+                  onClick={() => handleNavClick("faq")}
+                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50"
+                >
+                  FAQ (Coming Soon)
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <div className="relative h-[600px]">
         <Image
@@ -37,16 +104,6 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 bg-gray-800/40" />
-        <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20">
-          <Image
-            src="/images/logo.png"
-            alt="Clear Choice Pool Service Logo"
-            width={200}
-            height={80}
-            className="object-contain"
-            priority
-          />
-        </div>
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">
@@ -110,7 +167,7 @@ export default function Home() {
         </div>
       </div>
       {/* Why Choose Us Section */}
-      <div className="py-24 bg-blue-50">
+      <div id="why-choose-us" className="py-24 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16">
             Why Choose Us
