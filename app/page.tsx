@@ -49,8 +49,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Navbar */}
-      <nav className="bg-blue-200 h-12 px-4 sticky top-0 z-50 shadow-md">
-        <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
+      <nav className="bg-blue-200 h-12 sticky top-0 z-50 shadow-md">
+        <div className="flex justify-between items-center h-full px-4 sm:px-6 lg:px-12">
+          {/* Logo */}
           <div className="relative h-11 w-44">
             <Image
               src="/images/logo.png"
@@ -60,16 +61,17 @@ export default function Home() {
               priority
             />
           </div>
-          {/* Dropdown Toggle */}
+
+          {/* Dropdown Menu */}
           <div className="relative">
             <button
               onClick={toggleMenu}
-              className="text-blue-900 font-semibold px-4 top-0 bottom-2 hover:text-blue-600 transition"
+              className="text-blue-900 font-semibold px-4 py-2 hover:text-blue-600 transition"
             >
               Menu
             </button>
             {menuOpen && (
-              <div className="fixed right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+              <div className="fixed right-4 top-14 w-48 bg-white rounded-md shadow-lg z-50">
                 <button
                   onClick={() => handleNavClick("services")}
                   className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50"
