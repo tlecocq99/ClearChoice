@@ -22,6 +22,12 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
+import { Jura } from "next/font/google";
+
+const jura = Jura({
+  subsets: ["latin"],
+  weight: ["300", "400"],
+});
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -108,7 +114,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-gray-800/40" />
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">
+            <h1
+              className={`${jura.className} text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2`}
+            >
               Clear Choice Pools
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8">
