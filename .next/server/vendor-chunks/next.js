@@ -20,6 +20,16 @@ eval("// Exports\nmodule.exports = {\n\t\"style\": {\"fontFamily\":\"'__Inter_d6
 
 /***/ }),
 
+/***/ "(ssr)/./node_modules/next/font/google/target.css?{\"path\":\"app\\\\page.tsx\",\"import\":\"Jura\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":[\"300\",\"400\"]}],\"variableName\":\"jura\"}":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/font/google/target.css?{"path":"app\\page.tsx","import":"Jura","arguments":[{"subsets":["latin"],"weight":["300","400"]}],"variableName":"jura"} ***!
+  \****************************************************************************************************************************************************************************/
+/***/ ((module) => {
+
+eval("// Exports\nmodule.exports = {\n\t\"style\": {\"fontFamily\":\"'__Jura_3e8257', '__Jura_Fallback_3e8257'\",\"fontStyle\":\"normal\"},\n\t\"className\": \"__className_3e8257\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9mb250L2dvb2dsZS90YXJnZXQuY3NzP3tcInBhdGhcIjpcImFwcFxcXFxwYWdlLnRzeFwiLFwiaW1wb3J0XCI6XCJKdXJhXCIsXCJhcmd1bWVudHNcIjpbe1wic3Vic2V0c1wiOltcImxhdGluXCJdLFwid2VpZ2h0XCI6W1wiMzAwXCIsXCI0MDBcIl19XSxcInZhcmlhYmxlTmFtZVwiOlwianVyYVwifSIsIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0EsV0FBVyw4RUFBOEU7QUFDekY7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL25leHRqcy8uL25vZGVfbW9kdWxlcy9uZXh0L2ZvbnQvZ29vZ2xlL3RhcmdldC5jc3M/NmYzNiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBFeHBvcnRzXG5tb2R1bGUuZXhwb3J0cyA9IHtcblx0XCJzdHlsZVwiOiB7XCJmb250RmFtaWx5XCI6XCInX19KdXJhXzNlODI1NycsICdfX0p1cmFfRmFsbGJhY2tfM2U4MjU3J1wiLFwiZm9udFN0eWxlXCI6XCJub3JtYWxcIn0sXG5cdFwiY2xhc3NOYW1lXCI6IFwiX19jbGFzc05hbWVfM2U4MjU3XCJcbn07XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/font/google/target.css?{\"path\":\"app\\\\page.tsx\",\"import\":\"Jura\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":[\"300\",\"400\"]}],\"variableName\":\"jura\"}\n");
+
+/***/ }),
+
 /***/ "(ssr)/./node_modules/next/dist/api/image.js":
 /*!*********************************************!*\
   !*** ./node_modules/next/dist/api/image.js ***!
