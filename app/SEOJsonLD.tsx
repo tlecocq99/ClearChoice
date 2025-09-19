@@ -10,7 +10,7 @@ export default function SEOJsonLd() {
     logo: "https://clearchoicepools.org/images/logo.PNG",
     image: "https://clearchoicepools.org/images/sunset.png",
     description:
-      "Pool cleaning, maintenance, chemical balancing, and filter service in Lafayette, Louisiana.",
+      "Clear Choice Pools provides expert pool service, cleaning, maintenance, and repairs in Lafayette, LA. Keep your pool crystal clear year-round. Contact us today!",
     telephone: "+13378896169",
     priceRange: "$$",
     areaServed: [
