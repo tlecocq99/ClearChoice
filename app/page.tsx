@@ -23,7 +23,6 @@ import {
 import { useState } from "react";
 import Image from "next/image";
 import { Jura } from "next/font/google";
-import SEOJsonLd from './SEOJsonLd';
 
 const jura = Jura({
   subsets: ["latin"],
@@ -54,7 +53,6 @@ export default function Home() {
     }
   };
   return (
- <SEOJsonLd />
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Navbar */}
       <nav className="bg-blue-200 h-12 sticky top-0 z-50 shadow-md">
@@ -62,7 +60,7 @@ export default function Home() {
           {/* Logo */}
           <div className="relative h-11 w-44">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.PNG"
               alt="Clear Choice Pool Service Logo"
               fill
               className="object-contain"
