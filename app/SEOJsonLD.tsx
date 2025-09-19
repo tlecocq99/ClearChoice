@@ -7,7 +7,7 @@ export default function SEOJsonLd() {
     "@type": ["LocalBusiness", "PoolMaintenanceBusiness"],
     name: "Clear Choice Pool Cleaning",
     url: "https://clearchoicepools.org/",
-    logo: "https://clearchoicepools.org/images/logo.png",
+  logo: "https://clearchoicepools.org/images/logo.PNG",
     image: "https://clearchoicepools.org/images/sunset.png",
     description:
       "Pool cleaning, maintenance, chemical balancing, and filter service in Lafayette, Louisiana.",
