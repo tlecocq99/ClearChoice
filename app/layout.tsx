@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import SEOJsonLd from "./SEOJsonLD";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -67,6 +68,7 @@ export default function RootLayout({
         {/* LocalBusiness structured data for improved local SEO */}
         <SEOJsonLd />
         {children}
+        <Analytics />
       </body>
     </html>
   );
