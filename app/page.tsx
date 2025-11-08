@@ -19,6 +19,7 @@ import {
   Shield,
   Droplets,
   CheckCircle2,
+  Menu as MenuIcon,
 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
@@ -55,7 +56,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50">
       {/* Navbar */}
-      <nav className="bg-gradient-to-r from-blue-600 to-cyan-600 h-16 sticky top-0 z-50 shadow-lg backdrop-blur-md bg-opacity-95 transition-all duration-300">
+      <nav className="bg-gradient-to-r from-black to-cyan-600 h-16 sticky top-0 z-50 shadow-lg backdrop-blur-md bg-opacity-95 transition-all duration-300">
         <div className="flex justify-between items-center h-full px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
           {/* Logo */}
           <div className="relative h-12 w-48 animate-fadeIn">
@@ -68,39 +69,81 @@ export default function Home() {
             />
           </div>
 
-          {/* Dropdown Menu */}
+          {/* Menu Trigger */}
           <div className="relative">
             <button
               onClick={toggleMenu}
-              className="text-white font-semibold px-6 py-2 hover:bg-white/20 rounded-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+              aria-expanded={menuOpen}
+              aria-controls="mobile-nav"
+              className="flex items-center justify-center h-12 w-12 rounded-full border border-white/40 bg-white/10 text-white shadow-lg transition-all duration-300 hover:bg-white/20 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
             >
-              Menu
+              <MenuIcon
+                className={`h-6 w-6 transition-transform duration-300 ${
+                  menuOpen ? "rotate-90" : ""
+                }`}
+              />
+              <span className="sr-only">Toggle navigation menu</span>
             </button>
-            {menuOpen && (
-              <div className="fixed right-4 top-20 w-56 bg-white rounded-xl shadow-2xl z-50 overflow-hidden border border-gray-100 animate-slideDown">
-                <button
-                  onClick={() => handleNavClick("services")}
-                  className="block w-full text-left px-6 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all duration-200"
-                >
-                  Services
-                </button>
-                <button
-                  onClick={() => handleNavClick("why-choose-us")}
-                  className="block w-full text-left px-6 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all duration-200"
-                >
-                  Why Choose Us
-                </button>
-                <button
-                  onClick={() => handleNavClick("faq")}
-                  className="block w-full text-left px-6 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all duration-200"
-                >
-                  FAQ (Coming Soon)
-                </button>
-              </div>
-            )}
           </div>
         </div>
       </nav>
+
+      {/* Mobile Navigation Drawer */}
+      <div
+        onClick={() => setMenuOpen(false)}
+        className={`fixed inset-x-0 top-16 bottom-0 bg-black/40 transition-opacity duration-300 z-40 ${
+          menuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
+        aria-hidden="true"
+      />
+      <aside
+        id="mobile-nav"
+        className={`fixed top-16 right-0 h-[calc(100vh-4rem)] w-72 max-w-[80vw] bg-white/95 backdrop-blur-xl border-l border-white/40 shadow-2xl z-50 transition-transform duration-300 ease-out ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <nav className="flex h-full flex-col gap-3 px-6 py-8 text-gray-700">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-500/80">
+            Navigate
+          </p>
+          <button
+            onClick={() => handleNavClick("services")}
+            className="rounded-xl px-4 py-3 text-left text-lg font-medium transition-all duration-200 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 hover:text-blue-700"
+          >
+            Services
+          </button>
+          <button
+            onClick={() => handleNavClick("why-choose-us")}
+            className="rounded-xl px-4 py-3 text-left text-lg font-medium transition-all duration-200 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 hover:text-blue-700"
+          >
+            Why Choose Us
+          </button>
+          <button
+            onClick={() => handleNavClick("faq")}
+            className="rounded-xl px-4 py-3 text-left text-lg font-medium transition-all duration-200 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 hover:text-blue-700"
+          >
+            FAQ (Coming Soon)
+          </button>
+          <div className="mt-auto flex flex-col gap-3 border-t border-gray-100 pt-6">
+            <a
+              href="tel:+13378896169"
+              className="rounded-xl border border-blue-100 px-4 py-3 text-center text-sm font-semibold text-blue-600 transition-colors duration-200 hover:border-blue-200 hover:bg-blue-50"
+              onClick={() => setMenuOpen(false)}
+            >
+              Call (337) 889-6169
+            </a>
+            <a
+              href="mailto:westerchil@gmail.com"
+              className="rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-3 text-center text-sm font-semibold text-white shadow-lg transition-transform duration-200 hover:scale-[1.02]"
+              onClick={() => setMenuOpen(false)}
+            >
+              Email Us
+            </a>
+          </div>
+        </nav>
+      </aside>
 
       {/* Hero Section */}
       <div className="relative h-[600px] overflow-hidden">
@@ -124,10 +167,16 @@ export default function Home() {
               pool clean and sanitized all year round.
             </p>
             <div className="flex gap-4 animate-slideUp delay-300">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              >
                 <a href="#contact">Get Free Quote</a>
               </Button>
-              <Button size="lg" className="bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+              <Button
+                size="lg"
+                className="bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              >
                 <a href="#services">Our Services</a>
               </Button>
             </div>
@@ -135,7 +184,10 @@ export default function Home() {
         </div>
       </div>
       {/* Services Section */}
-      <div id="services" className="py-24 bg-gradient-to-b from-white to-blue-50/30">
+      <div
+        id="services"
+        className="py-24 bg-gradient-to-b from-white to-blue-50/30"
+      >
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent animate-fadeIn">
             Our Professional Services
@@ -158,7 +210,9 @@ export default function Home() {
               <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
                 <Shield className="h-14 w-14 text-cyan-600" />
               </div>
-              <h3 className="text-2xl font-semibold mb-3 text-gray-800">Chemical Balance</h3>
+              <h3 className="text-2xl font-semibold mb-3 text-gray-800">
+                Chemical Balance
+              </h3>
               <p className="text-gray-600 leading-relaxed">
                 Expert water testing and chemical balancing for safe,
                 crystal-clear water.
@@ -168,7 +222,9 @@ export default function Home() {
               <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
                 <CheckCircle2 className="h-14 w-14 text-blue-500" />
               </div>
-              <h3 className="text-2xl font-semibold mb-3 text-gray-800">Equipment Check</h3>
+              <h3 className="text-2xl font-semibold mb-3 text-gray-800">
+                Equipment Check
+              </h3>
               <p className="text-gray-600 leading-relaxed">
                 Regular inspection and maintenance of all pool equipment and
                 systems.
@@ -178,7 +234,10 @@ export default function Home() {
         </div>
       </div>
       {/* Why Choose Us Section */}
-      <div id="why-choose-us" className="py-24 bg-gradient-to-b from-blue-50/30 to-white relative overflow-hidden">
+      <div
+        id="why-choose-us"
+        className="py-24 bg-gradient-to-b from-blue-50/30 to-white relative overflow-hidden"
+      >
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl"></div>
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -205,13 +264,22 @@ export default function Home() {
                 icon: <CheckCircle2 className="h-8 w-8" />,
               },
             ].map((item, index) => (
-              <div key={index} className={`flex items-start gap-6 p-6 rounded-2xl bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 animate-slideUp delay-${(index + 1) * 100}`}>
+              <div
+                key={index}
+                className={`flex items-start gap-6 p-6 rounded-2xl bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 animate-slideUp delay-${
+                  (index + 1) * 100
+                }`}
+              >
                 <div className="p-4 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 text-white shadow-md flex-shrink-0 transform hover:rotate-6 transition-transform duration-300">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -222,7 +290,10 @@ export default function Home() {
       <div className="py-24 bg-gradient-to-b from-white to-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16 animate-fadeIn">
-            <h2 id="contact" className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            <h2
+              id="contact"
+              className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent"
+            >
               Contact Us
             </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-6 rounded-full animate-scaleIn"></div>
@@ -242,13 +313,18 @@ export default function Home() {
               </a>
             </Button>
 
-            <Button size="lg" className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl px-8 py-6">
+            <Button
+              size="lg"
+              className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl px-8 py-6"
+            >
               <a
                 href="mailto:westerchil@gmail.com"
                 className="flex items-center gap-3"
               >
                 <Mail className="h-6 w-6" />
-                <span className="text-lg font-semibold">westerchil@gmail.com</span>
+                <span className="text-lg font-semibold">
+                  westerchil@gmail.com
+                </span>
               </a>
             </Button>
           </div>
